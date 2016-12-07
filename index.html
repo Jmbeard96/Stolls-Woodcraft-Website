@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <div id="header">
+        <div>
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png" alt="LOGO" id="logoPic"></a>
+            </div>
+            <ul id="navigation">
+                <li class="selected">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="contents">
+        <div>
+            <div class="body">
+                <ul id="featured">
+                    <li>
+                        <div>
+                            <img src="images/living-room.jpg" alt="Img">
+                            <a href="index.html"></a>
+                        </div>
+                        <div class="details">
+                            <h4>Storage Buildings</h4>
+                            <p>
+                                We have the best storage buildings. We have the best storage buildings. We have the best storage buildings. We have the best storage buildings. We have the best storage buildings. We have the best storage buildings.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="bedroom">
+                        <div>
+                            <img src="images/bedroom.jpg" alt="Img">
+                            <a href="index.html"></a>
+                        </div>
+                        <div class="details">
+                            <h4>Gazebos</h4>
+                            <p>
+                                We have the best gazebos. We have the best gazebos. We have the best gazebos. We have the best gazebos. We have the best gazebos. We have the best gazebos. We have the best gazebos.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="kitchen">
+                        <div>
+                            <img src="images/kitchen.jpg" alt="Img">
+                            <a href="index.html"></a>
+                        </div>
+                        <div class="details">
+                            <h4>Metal Roofing</h4>
+                            <p>
+                                We have the best metal roofing. We have the best metal roofing. We have the best metal roofing. We have the best metal roofing. We have the best metal roofing. We have the best metal roofing. We have the best metal roofing.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="contact">
+                    <p>
+                        For Order and Inquiries Please Call: <b align="center">731-989-7300 </b> Or you can visit us at: <b align="center">3450 Highway 45 Magic Valley <br> Henderson, Tennessee 38340</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <div id="links">
+                <div class="showroom">
+                    <h4>Visit our Showroom</h4>
+                    <a href="gallery.html"><img src="images/show-room.png" alt="Img"></a>
+                    <p>
+                        3450 Hwy 45 Magic Valley
+                        <br> Henderson, TN 38340
+                        <br>
+                        <br> (731) 989-7300
+                        <br>
+                        <br> <a href="mailto:stolle@bellsouth.net">Info@stollcraft.com </a>
+                    </p>
+                </div>
+                <div>
+                    <form action="#" method="post" id="newsletter">
+                        <h4>Join Our Newsletter</h4>
+                        <input type="text" value="Enter Email Address Here For Updates" onBlur="javascript:if(this.value==''){this.value=this.defaultValue;}" onFocus="javascript:if(this.value==this.defaultValue){this.value='';}">
+                        <input type="submit" value="Sign up" class="btn2" />
+                    </form>
+                    <div id="connect">
+                        <h4>Social Media</h4>
+                        <a href="http://www.facebook.com" class="facebook"></a>
+                        <a href="https://plus.google.com/u/0/" class="googleplus"></a>
+                        <a href="https://twitter.com/?lang=en" class="twitter"></a>
+                    </div>
+                </div>
+                <div class="googlemap">
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                    <div style='overflow:hidden;height:440px;width:700px;'>
+                        <div id='gmap_canvas' style='height:300px;width:300px;float:left;'></div>
+                        <div><small><a href="http://embedgooglemaps.com"></a></small></div>
+                        <div><small><a href="https://www.autohuren.world/"></a></small></div>
+                        <style>
+                            #gmap_canvas img {
+                                max-width: none!important;
+                                background: none!important
+                            }
+                        </style>
+                    </div>
+                    <script type='text/javascript'>
+                        function init_map() {
+                            var myOptions = {
+                                zoom: 10,
+                                center: new google.maps.LatLng(35.943377732473934, -88.15666927148436),
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            };
+                            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                            marker = new google.maps.Marker({
+                                map: map,
+                                position: new google.maps.LatLng(35.943377732473934, -88.15666927148436)
+                            });
+                            infowindow = new google.maps.InfoWindow({
+                                content: '<strong>Stoll\'s</strong><br>3450 HIGHWAY 45 MAGIC VALLEY  HENDERSON, TENNESSEE 38340<br>'
+                            });
+                            google.maps.event.addListener(marker, 'click', function () {
+                                infowindow.open(map, marker);
+                            });
+                            infowindow.open(map, marker);
+                        }
+                        google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
+                </div>
+            </div>
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <p id="footnote">
+                © Copyright 2016. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
